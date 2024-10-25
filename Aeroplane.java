@@ -187,6 +187,46 @@ class Laptop{
 		System.out.println("-----------------------------");
 		
 	}
+	class Bike {
+	 
+	    static String brand;
+	    static String engineType;
+	    static String fuelType;
+
+	    
+	    String model;
+	    int cc; 
+	    int maxSpeed; 
+	    String color;
+
+	   
+	    static {
+	        brand = "Yamaha";
+	        engineType = "Single Cylinder";
+	        fuelType = "Petrol";
+	    }
+
+	   
+	    public Bike(String model, int cc, int maxSpeed, String color) {
+	        this.model = model;
+	        this.cc = cc;
+	        this.maxSpeed = maxSpeed;
+	        this.color = color;
+	    }
+
+	   
+	    public void printDetails() {
+	    
+	        System.out.println("Brand: " + brand);
+	        System.out.println("Engine Type: " + engineType);
+	        System.out.println("Fuel Type: " + fuelType);
+	        System.out.println("Model: " + model);
+	        System.out.println("Engine Displacement: " + cc + " cc");
+	        System.out.println("Max Speed: " + maxSpeed + " km/h");
+	        System.out.println("Color: " + color);
+	    
+	    }
+	}
 
 }
 
